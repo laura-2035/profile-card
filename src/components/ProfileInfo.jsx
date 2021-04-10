@@ -1,15 +1,13 @@
 import React from 'react'
 import './ProfileInfo.css'
-import picture from '../assets/img/picture.jpg'
+import ProfilePicture from './ProfilePicture'
 export default props =>{
 
     return (
         <div className="profile-card-top">
             <div className="profile-card-info-bg">
             </div>
-            <div className="profile-card-picture">
-                <img src={picture} alt="Profile picture"></img>
-            </div>
+            <ProfilePicture />
             <div className="profile-card-info">
                 <h2 className="profile-name">{props.name}</h2>
                 <h3 className="profile-age">{props.age}</h3>
