@@ -1,0 +1,31 @@
+.profile-card-stats{
+    border-top: solid 1px hsl(0, 0%, 59%, 0.3);
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    color: hsl(229, 23%, 23%);
+}
+.profile-card-stats-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto 5%;
+}
+.profile-card-stats-list li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4em;
+} 
+.profile-card-stats-list-item > p{
+    font-weight: 700;
+    font-size: 1.1em;
+    
+}
+.profile-card-stats-list-item span{
+    color: hsl(227, 10%, 46%);
+    font-size: 0.8em;
+}   

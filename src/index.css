@@ -1,7 +1,13 @@
 @font-face {
     font-family: 'Kumbh Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    src: url('./assets/fonts/KumbhSans-Light.ttf');
+    font-weight: 300;
   }
+ @font-face {
+   font-family: 'Kumbh Sans';
+   src: url('./assets/fonts/KumbhSans-Bold.ttf');
+   font-weight: 700;
+ } 
   
   * {
     font-family: 'Kumbh Sans', monospace;
@@ -14,10 +20,18 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      width: 100%;
       font-size: 18px;
       background:hsl(185, 75%, 39%);
       background-image: url('./assets/img/bg-pattern-top.svg'), url('./assets/img/bg-pattern-bottom.svg');
-      background-position:  0px -500px, right 500px;
+      background-size: auto, auto;
+      background-position:  left -50vh, right 50vh;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+  }
+
+  @media (max-width: 900px){
+    body{
+      background-position:  -750px -500px, 100px 450px;
+    }
+      
   }
